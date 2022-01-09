@@ -1,0 +1,45 @@
+[
+    {
+     "id": 1,
+     "name": "AlexanderLamas",
+     "email": "alexandernarcisolamas@gmail.com",
+     "date": "13-05-2002",
+     "pass": "Admin"
+    },
+    {
+     "id": 2,
+     "name": "GabrielGomez",
+     "email": "gabrielgomez@gmail.com",
+     "date": "13-05-2002",
+     "pass": "Admin"
+    },
+    {
+     "id": 3,
+     "name": "CamilaLedezma",
+     "email": "camilaledezma@gmail.com",
+     "date": "13-05-2002",
+     "pass": "Admin"
+    },
+    {
+     "id": 4,
+     "name": "MarielaCalcina",
+     "email": "marielacalcina@gmail.com",
+     "date": "24-11-2001",
+     "pass": "Admin"
+    },
+    {
+     "id": 5,
+     "name": "Elkpo123",
+     "email": "capo@hotmail.com",
+     "date": "12-03-2010",
+     "pass": "contrasena"
+    },
+    {
+     "id": 6,
+     "name": "MisterX",
+     "email": "Señor@outlook.com",
+     "date": "22-12-2000",
+     "pass": "contrasena"
+    }
+    
+   ]

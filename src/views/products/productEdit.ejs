@@ -1,0 +1,69 @@
+<html>
+<%- include ("../partials/head") %> 
+<body>
+<%- include("../partials/header") %> 
+<main class="product-edit">
+    <section class="titulos"><h2>Modificar producto: <%= productToEdit.name %></h2></section>
+    
+    <section class="forms">
+        
+        <form action="/products/edit/<%= productToEdit.id %>?_method=PUT" method="post">
+            <!--<div>
+                <label for="id-product" value="id-product">ID de producto a modificar:<input type="text"  name="id-product" required></label>
+            </div>-->
+            <div>
+                <label for="name-product" value="name-product">Nombre:<input type="text" value="<%= productToEdit.name %>" name="name-product" required></label>
+            </div>
+            <div class="product-desc"> 
+                <label for="description-product">Descripción:</label>
+                <textarea minlength="4" name="description-product" required><%= productToEdit.description%></textarea>
+            </div>  
+            <div>
+                <label for="category-product">Categoría:</label>
+                <select name="category-product" id="prod-category">
+                    <option value="remeras"selected> Remeras</option>
+                    <option value="abrigos">Abrigos</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
+            </div>
+            <div>
+                <label for="size-product">Talle: </label>
+                <select name="size-product" id="prod-size">
+                    <option value="xs" selected>  XS </option>
+                    <option value="u">  U </option>
+                    <option value="s">  S </option>
+                    <option value="m">  M </option>
+                    <option value="l">  L </option>
+                    <option value="xl"> XL </option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity-product">Cantidad: </label>
+                <input type="number" value="<%= productToEdit.quantity %>" name="quantity-product" id="cantidad-product" required>
+            </div>
+            <div>
+                <label for="colour-product">Color: </label>
+                <input type="text" value="<%= productToEdit.colour %>" name="colour-product" required>
+            </div>
+            <div>
+                <label for="price-product">Precio: </label>
+                <input type="number" value="<%= productToEdit.price %>" name="price-product" required>
+            </div>
+            <div>
+                <label for="discount-product">Descuento: </label>
+                <input type="number" value="<%= productToEdit.discount %>" name="discount-product" required>
+            </div>
+            <!--<div>
+                <label for="image-product">Imagen:</label>
+                <input type="file" name="image-product" accept="image/png" required>
+            </div>-->
+            <div class="submit">
+                <button type="submit" name="submit">Guardar cambios</button>
+            </div>
+        </form>
+    </section>
+</main>
+<%- include("../partials/footer") %> 
+</body>
+</html>

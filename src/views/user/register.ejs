@@ -1,0 +1,50 @@
+<%- include ("../partials/head") %> 
+    <body>
+        <%- include("../partials/header.ejs") %>
+        <main class ="register">
+            <section class="titulos">
+                <h1>Creá tu cuenta ¡Gratis!</h1>
+                <h3>¡Accedé a nuestros beneficios exclusivos!</h3>
+            </section>
+        
+            <section class="forms">
+                <form action="/register" method="POST">
+                    <!--
+                    <div class="google">
+                        <button type=""><i class="fab fa-google"></i> Registrate con Google</button>
+                    </div>
+                    <div class="facebook">
+                        <button type=""><i class="fab fa-facebook"></i> Registrate con Facebook</button>
+                    </div> -->
+                    <div class="nombreApellido">
+                        <label for="name">Nombre<b>(*)</b><input type="text" name="name" minlength="3" required></label>
+                    </div>
+        
+                    <div class="email">
+                        <label for="email">Email <b>(*)</b><input type="text" name="email"  placeholder="ejemplo@gmail.com" required></label>
+                    </div>
+        
+                    <div class="fechaNacimiento"><label for="date">Fecha de nacimiento<input type="date" name="date"></label></div>
+
+                    <div class="password"><label for="pass">Contraseña<b>(*)</b><input type="password" name= "pass"  minlength="6" maxlength="12" placeholder="min. 6 caracteres" required></label></div>
+        
+                    <div class="confirmacionPassword"><label for="passCon">Confirmar Contraseña<b>(*)</b><input type="password" name="passCon"  minlength="6" maxlength="12" required></label></div>
+        
+                    <div class="submit"><label for="submit"><button type="submit" id="submit">Crear Cuenta</button></label></div>
+                </form>
+                <div class="carrousel">
+                    <!-- <i class="fas fa-arrow-left"></i> -->
+                    <img src="/images/pagina/banner-l-r.jpg" alt="banner">
+                    <!-- <i class="fas fa-arrow-right"></i> -->
+                </div>
+        
+            </section>
+            <section class="a-login">
+                ¿Ya tenés una cuenta? <a href="./ingresar">Iniciá sesión</a>
+            </section>
+
+        </main>
+
+        <%- include("../partials/footer") %>
+    </body>
+    </html>

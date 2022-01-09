@@ -1,0 +1,39 @@
+    <%- include ("../partials/head") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+    <main class="login">
+        <section class="titulos">
+            <h1>Inciar sesión</h1>
+        </section>
+        <section class=forms>
+            <div class="carrousel">
+                <!-- <i class="fas fa-arrow-left"></i> -->
+                <img src="/images/pagina/banner-l-r.jpg" alt="banner">
+                <!-- <i class="fas fa-arrow-right"></i> -->
+            </div>
+            <form action="/index" method="post">
+                <div class="google">
+                    <button type="submit"><i class="fab fa-google"></i> Registrate con Google</button>
+                </div>
+                <div class="facebook">
+                    <button type="submit"><i class="fab fa-facebook"></i> Registrate con Facebook</button>
+                </div>
+                <div class="email">
+                    <label for="user-email">Email:<input type="email" name="user-email" value="" placeholder="ejemplo@gmail.com" required></label>
+                    
+                </div>
+                <div class="password">
+                    <label for="user-pass">Contraseña:<input type="password" name="user-pass" required> </label>
+                    
+                    <p>¿Olvidaste tu contraseña?</p>
+                </div>    
+                <div class="submit"><label for="submit"><button type="submit" id="submit">Iniciar sesión</button></label></div>
+            </form>
+        </section>
+        <section class="a-register">
+            ¿Todavía no tenés una cuenta? <a href="./registro">Registrate</a>
+        </section>
+    </main>
+    <%- include("../partials/footer") %> 
+</body>
+</html>
